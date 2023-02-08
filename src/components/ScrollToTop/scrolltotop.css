@@ -1,0 +1,48 @@
+.scrollToTop {
+	position: fixed;
+	right: 2.5rem;
+	bottom: -20%;
+	background-color: var(--title-color);
+	opacity: 0.8;
+	padding: 0.3rem 0.5rem;
+	border-radius: .4rem;
+	z-index: var(--z-tooltip);
+	transition: .4s;
+}
+
+.scrollToTop__icon {
+	font-size: 1.5rem;
+	color: var(--container-color);
+}
+
+.scrollToTop:hover {
+	background-color: var(--title-color-dark);
+}
+
+.show__scroll {
+	bottom: 3rem;
+}
+
+/* large */
+@media screen and (max-width:992px) {
+	.scrollToTop {
+		right: 1.25rem;
+		padding: 0.25rem 0.4rem;
+	}
+
+	.scrollToTop__icon {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.show__scroll {
+		bottom: 4rem;
+	}
+}
+
+@media screen and (max-width:350px) {
+	.scrollToTop {
+		right: 1rem;
+	}
+}
